@@ -1,0 +1,37 @@
+{
+  "name": "Vote",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "song": {
+      "type": "number",
+      "required": true
+    },
+    "look": {
+      "type": "number",
+      "required": true
+    },
+    "winner": {
+      "type": "boolean"
+    },
+    "song_id": {
+      "type": "Song",
+      "required": true
+    },
+    "voter_id": {
+      "type": "Voter",
+      "required": true
+    },
+    "comment": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

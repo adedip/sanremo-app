@@ -1,0 +1,26 @@
+{
+  "name": "Song",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "year": {
+      "type": "string"
+    },
+    "singer_id": {
+      "type": "Singer",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
